@@ -109,8 +109,9 @@ function tenOrMore(array){
       TenorMore.push(array[i]);
     }
   }
-}
   return TenorMore;
+}
+
 
 console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
 
@@ -125,8 +126,8 @@ function numbersOverX(array, num){
     if (array[i] > num){
       greaterThan.push(array[i]);
     }
-    return greaterThan;
   }
+  return greaterThan;
 }
 
 
