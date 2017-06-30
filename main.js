@@ -56,8 +56,9 @@ function getEvens(array){
       even.push(array[i]);
     }
   }
+  return even;
 }
-return even;
+
 
 console.assert(getEvens(numbers).toString() === '12,4,18,6', {'message': 'getEvens should return "12,4,18,6"'});
 
@@ -86,7 +87,7 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // Write a function that accepts an array argument
 // and returns the sum of all of the numbers in the array
 // A:
-function arraySum(){
+function arraySum(array){
   var sum = 0;
   for (var i = 0; i < array.length; i++){
     sum += array[i];
@@ -103,13 +104,13 @@ console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumber
 // and returns an array of only the numbers greater than 10
 // A:
 function tenOrMore(array){
-  var TenorMore = [];
+  var tenOrMore = [];
   for (var i = 0; i < array.length; i++){
     if (array[i] >= 10){
-      TenorMore.push(array[i]);
+      tenOrMore.push(array[i]);
     }
   }
-  return TenorMore;
+  return tenOrMore;
 }
 
 
